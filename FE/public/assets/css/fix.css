@@ -1,0 +1,7 @@
+.newre .owl-item {
+    /*width: 100% !important; !* Thiết lập width cho mỗi item *!*/
+    padding: 10px !important; /* Loại bỏ padding */
+    margin: 10px !important; /* Loại bỏ margin */
+    width: 570px !important;
+}
+
