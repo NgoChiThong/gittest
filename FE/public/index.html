@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/6030249.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta
+          name="description"
+          content="Web site created using create-react-app"
+  />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+    manifest.json provides metadata used when your web app is installed on a
+    user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+  -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--    <title>Movie Booking</title>-->
+  <link rel="stylesheet" href="../assets/css/style-starter.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=AVhobcfVoLu3LX8u6LhzTCmenmWTlby18st_eMHnMSoC7IOiaLLig7czw9KaXBbFUP5YiPYgniNB0fTw"></script>
+
+
+  <!--    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">-->
+  <!--    <link rel="stylesheet" type="text/css" href="../assets/css/progress.css">-->
+
+  <!--    <link rel="stylesheet" type="text/css" href="../assets/css/ticket-booking.css">-->
+
+  <!--    &lt;!&ndash; ..............For progress-bar............... &ndash;&gt;-->
+  <!--    <link rel="stylesheet" type="text/css" href="../assets/css/e-ticket.css">-->
+
+  <!--    <link rel="stylesheet" type="text/css" href="../assets/css/payment.css" />-->
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" rel="stylesheet">
+
+
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+
+</body>
+<script src="../assets/js/jquery-1.9.1.min.js"></script>
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/easyResponsiveTabs.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    //Horizontal Tab
+    $('#parentHorizontalTab').easyResponsiveTabs({
+      type: 'default', //Types: default, vertical, accordion
+      width: 'auto', //auto or any width like 600px
+      fit: true, // 100% fit in a container
+      tabidentify: 'hor_1', // The tab groups identifier
+      activate: function (event) { // Callback function if tab is switched
+        var $tab = $(this);
+        var $info = $('#nested-tabInfo');
+        var $name = $('span', $info);
+        $name.text($tab.text());
+        $info.show();
+      }
+    });
+  });
+</script>
+<!--/theme-change-->
+<script src="%PUBLIC_URL%/assets/js/theme-change.js"></script>
+<script src="%PUBLIC_URL%/assets/js/owl.carousel.js"></script>
+<!-- script for banner slider-->
+<!-- script for owlcarousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+<!--  &lt;!&ndash; disable body scroll which navbar is in active &ndash;&gt;-->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  <!--Main navigation Active Class Add Remove-->
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+
+<script src="../assets/js/jquery.waypoints.min.js"></script>
+<script src="../assets/js/jquery.countup.js"></script>
+<script type="text/javascript" src='../assets/js/swiper.min.js'></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<!--  <script type="text/javascript" src="../assets/js/as-alert-message.min.js"></script>-->
+<!--  <script type="text/javascript" src="../assets/js/sign-in.js"></script>-->
+<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+<script type="text/javascript" src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+<!--  <script type="text/javascript" src="../assets/js/ticket-booking.js"></script>-->
+</html>
