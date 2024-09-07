@@ -16,7 +16,7 @@ import java.util.List;
 
 @RestController
 @Api(description = "Api booking")
-@RequestMapping("/book_gi_ma_book")
+@RequestMapping("/book_gi_ma_book_haha")
 public class BookController {
 	@Autowired
 	BookService bookService;
